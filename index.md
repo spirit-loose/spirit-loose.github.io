@@ -1,3 +1,6 @@
+9:00 18:00 9:00
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/spirit-loose/spirit-loose.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
