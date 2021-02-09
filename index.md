@@ -1,40 +1,66 @@
-9:00 18:00 9:00
+# spirit-loose.github.io
+
+## 業務開始時間と業務終了時間
+
+ 業務開始時間と業務終了時間を入力すると、労働時間が計算されます。
+
+|  開始  |  終了  | 労働時間 
+| :----: | :----: | :----: | 
+|  9:00  |  15:00  | 6:00 | 
+
+## 休憩時間
+
+* 設定画面で休憩時間を設定すると、自動で休憩時間が引かれます。
+
+|  休憩開始  |  休憩終了  
+| :----: | :----: | 
+|  12:00  |  13:00  
+
+|  開始  |  終了  | 労働時間 
+| :----: | :----: | :----: | 
+|  9:00  |  15:00  | 5:00 |
+
+休憩時間を複数設定することもできます。
+
+設定値
+|  休憩開始  |  休憩終了  
+| :----: | :----: | 
+|  12:00  |  13:00  
+|  18:00  |  18:30  
+
+|  開始  |  終了  | 労働時間 
+| :----: | :----: | :----: | 
+|  9:00  |  19:00  | 8:30 |
+
+※1時間半引かれている
+
+## 残業
+
+きんたいさんは標準で8時間以上を残業扱いにしています。
+
+設定値
+|  休憩開始  |  休憩終了  
+| :----: | :----: | 
+|  12:00  |  13:00  
+
+|  開始  |  終了  | 労働時間 | 残業 |
+| :----: | :----: | :----: | :----: |
+|  9:00  |  19:00  | 9:00 | 1:00 |
+
+残業には複数の種類があります。   
+労働基準法で定められており、最低割増賃金が定められています。  
+会社によっては法定内残業と法定外残業を同一にあつかっているところもあります。  
+
+### 法定内残業
+
+定時を法定労働時間(8時間)未満にすることで、法定内残業時間を計算できます。
+
+設定値
+|  休憩開始  |  休憩終了  |  定時開始  |  定時終了  
+| :----: | :----: | :----: | :----: | 
+|  12:00  |  13:00  |  9:00  |  17:30 | 
 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/spirit-loose/spirit-loose.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/spirit-loose/spirit-loose.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+|  開始  |  終了  | 労働時間 | 法定内残業 |
+| :----: | :----: | :----: | :----: |
+|  9:00  |  18:00  | 8:00 | 0:30 |
